@@ -1,14 +1,15 @@
 import actionTypes from './actionTypes';
+import { getAllCodeService } from '../../services/userService';
+// Muon su dung duoc file nay thi phai qua file /actions/index.js export
 
-export const adminLoginSuccess = (adminInfo) => ({
-    type: actionTypes.ADMIN_LOGIN_SUCCESS,
-    adminInfo: adminInfo
+export const fetchGenderStart = () => ({
+    type: actionTypes.FETCH_GENDER_START
+})
+export const fetchGenderSuccess = () => ({
+    type: actionTypes.FETCH_GENDER_SUCCESS
+})
+export const fetchGenderFailed = () => ({
+    type: actionTypes.FETCH_GENDER_FAILED
 })
 
-export const adminLoginFail = () => ({
-    type: actionTypes.ADMIN_LOGIN_FAIL
-})
-
-export const processLogout = () => ({
-    type: actionTypes.PROCESS_LOGOUT
-})
+// start doing end
