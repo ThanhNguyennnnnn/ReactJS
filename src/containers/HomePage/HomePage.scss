@@ -32,7 +32,7 @@
                 }
 
                 &.section-outstanding-doctor {
-                    background-image: url('../../assets/OutStandingDoctor/bacsi.jpg');
+                    // background-image: url('../../assets/OutStandingDoctor/bacsi.jpg');
                     width: 120px;
                     height: 120px;
                     border-radius: 50%;
@@ -173,4 +173,8 @@
     &:hover {
         background: #d7d7d7 !important;
     }
+}
+
+.slick-disabled{
+    display: none !important;
 }

@@ -15,12 +15,11 @@ import HomeFooter from './HomeFooter';
 
 
 class HomePage extends Component {
-
     render() {
         let settings = {
             dots: false,
-            infinite: true,
-            speed: 500,
+            infinite: false,
+            speed: 50,
             slidesToShow: 4,
             slidesToScroll: 1,
 

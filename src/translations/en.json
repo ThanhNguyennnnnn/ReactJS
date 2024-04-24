@@ -12,7 +12,7 @@
         "welcome": "Welcome"
     },
     "banner": {
-        "title1": "MEDICAL FOUNDATION",
+        "title1": "MEDICAL PLATFORM",
         "title2": "COMPREHENSIVE HEALTH CARE",
         "Specialized-examination": "Specialized examination",
         "Remote-examination": "Remote examination",
@@ -48,9 +48,11 @@
         "position": "Position",
         "roleid": "Role",
         "image": "Avatar",
-        "save": "Save"
-        
-
-
+        "save": "Save",
+        "edit": "Edit user"
+    },
+    "homepage": {
+        "outstanding-doctor": "Last week's featured doctor",
+        "more-infor": "See more"
     }
 }

@@ -11,10 +11,13 @@ class HomeHeader extends Component {
 
     changeLanguage= (language) => {
         this.props.changeLanguageAppRedux(language)
+        console.log('hi ',this.props.changeLanguageAppRedux(language))
+
         // fire redux event: actions
     }
 
         render() {
+
             // console.log('check props: ', this.props)
             let language = this.props.language;
             return (
