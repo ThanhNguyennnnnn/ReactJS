@@ -108,6 +108,23 @@ const adminReducer = (state = initialState, action) => {
                 ...state,
             }
 
+        // FETCH ALL DOCTOR 
+        case actionTypes.FETCH_ALL_DOCTORS_SUCCESS:
+            state.allDoctors = action.dataDr;
+            // state.isLoadingGender = false;
+            // console.log('Fire fetch ROLE success: ', action);
+            return {
+                ...state,
+            }
+        case actionTypes.FETCH_ALL_DOCTORS_FAILED:
+            // state.isLoadingGender = false;
+            state.allDoctors = [];
+            // console.log('Fire fetch ROLE failed: ', action)
+
+            return {
+                ...state,
+            }
+
         default:
             return state;
     }
