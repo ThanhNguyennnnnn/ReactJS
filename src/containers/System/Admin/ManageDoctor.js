@@ -111,7 +111,7 @@ class ManageDoctor extends Component {
         }
         console.log(`Check res:`, res)
 
-    };
+    }
     handleOnChangeDesc = (event) => {
         this.setState({
             description: event.target.value

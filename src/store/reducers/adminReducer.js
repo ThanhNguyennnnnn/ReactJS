@@ -6,7 +6,9 @@ const initialState = {
     roles: [],
     positions: [],
     users: [],
-    topDoctors: []
+    topDoctors: [],
+    allDoctors: [],
+    allScheduleTime: [],
 }
 
 const adminReducer = (state = initialState, action) => {
@@ -120,6 +122,20 @@ const adminReducer = (state = initialState, action) => {
             // state.isLoadingGender = false;
             state.allDoctors = [];
             // console.log('Fire fetch ROLE failed: ', action)
+
+            return {
+                ...state,
+            }
+
+        // FETCH ALL SCHEDULE TIME
+        case actionTypes.FETCH_ALLCODE_SCHEDULE_TIME_SUCCESS:
+            state.allScheduleTime = action.dataTime;
+
+            return {
+                ...state,
+            }
+        case actionTypes.FETCH_ALLCODE_SCHEDULE_TIME_FAILED:
+            state.allScheduleTime = [];
 
             return {
                 ...state,
