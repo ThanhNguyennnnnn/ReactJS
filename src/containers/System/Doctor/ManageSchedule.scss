@@ -14,15 +14,20 @@
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
-        
+
 
         .btn-schedule {
             padding: 5px 15px;
             border: 1px solid grey;
+
+            &.active {
+                background-color: #3685d4;
+            }
         }
-        
+
     }
-    .btn-save-schedule{
+
+    .btn-save-schedule {
         margin-top: 20px;
     }
 }
