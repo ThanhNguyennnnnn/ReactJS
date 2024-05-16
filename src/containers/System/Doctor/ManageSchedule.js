@@ -11,6 +11,7 @@ import DatePicker from '../../../components/Input/DatePicker';
 import moment from 'moment';
 import { toast } from "react-toastify";
 import _ from 'lodash';
+import { saveBulkScheduleDoctor } from '../../../services/userService'
 
 
 class ManageSchedule extends Component {
@@ -90,7 +91,7 @@ class ManageSchedule extends Component {
             })
         }
     }
-    handleSaveSchedule = () => {
+    handleSaveSchedule = async() => {
         let { rangeTime, selectedDoctor, currentDate } = this.state;
         let result = [];
         if (!currentDate) {
@@ -102,7 +103,7 @@ class ManageSchedule extends Component {
             return;
         }
 
-        let formatedDate = moment(currentDate).format(dateFormat.SEND_TO_SERVER);
+        let formatedDate = new Date(currentDate).getTime();
 
         if (rangeTime && rangeTime.length>0) {
             let selectedTime = rangeTime.filter(item => item.isSelected === true)
@@ -111,7 +112,7 @@ class ManageSchedule extends Component {
                     let object = {};
                     object.doctorID = selectedDoctor.value;
                     object.date = formatedDate;
-                    object.time = schedule.keyMap;
+                    object.timeType = schedule.keyMap;
                     result.push(object);
                 })
             }
@@ -120,6 +121,14 @@ class ManageSchedule extends Component {
                 return;
             }
         }
+        let res = await saveBulkScheduleDoctor({
+            arrSchedule: result,
+            doctorID: selectedDoctor.value,
+            formatedDate: formatedDate
+
+        });
+        console.log("check res: ", res)
+
         console.log("check result: ", result)
     }
     render() {
