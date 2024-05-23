@@ -127,9 +127,6 @@ class ManageSchedule extends Component {
             formatedDate: formatedDate
 
         });
-        console.log("check res: ", res)
-
-        console.log("check result: ", result)
     }
     render() {
         let { rangeTime } = this.state;
