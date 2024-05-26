@@ -23,6 +23,10 @@
 
     .content-down {
         .short-infor {
+            .currency{
+                margin: 0 5px;
+                color: #333;
+            }
             span {
                 cursor: pointer;
                 color: rgb(17, 206, 235);
@@ -46,7 +50,9 @@
                 }
             }
 
-            .note {}
+            // .note {
+
+            // }
 
         }
 
