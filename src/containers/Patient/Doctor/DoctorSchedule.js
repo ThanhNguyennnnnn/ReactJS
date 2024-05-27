@@ -6,7 +6,7 @@ import localization from 'moment/locale/vi';
 import { LANGUAGES } from '../../../utils';
 import { getScheduleDoctorByDate } from '../../../services/userService';
 import { FormattedMessage } from 'react-intl';
-import BookingModal from './BookingModal';
+import BookingModal from './Modal/BookingModal';
 
 class DoctorSchedule extends Component {
 
@@ -155,7 +155,7 @@ class DoctorSchedule extends Component {
                                     </div>
 
                                     <div className='book-free'>
-                                        <span><FormattedMessage id="patient.detail-doctor.choose" /> <i class="far fa-hand-point-up"></i> <FormattedMessage id="patient.detail-doctor.book-free" /></span>
+                                        <span><FormattedMessage id="patient.detail-doctor.choose" /> <i className="far fa-hand-point-up"></i> <FormattedMessage id="patient.detail-doctor.book-free" /></span>
                                     </div>
                                 </>
                                 :
