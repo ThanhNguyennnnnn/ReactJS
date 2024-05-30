@@ -51,7 +51,6 @@ class ProfileDoctor extends Component {
 
     renderTimeBooking = (dataTime) => {
         let { language } = this.props;
-        console.log('check dateTime: ', dataTime)
         if (dataTime && !_.isEmpty(dataTime)) {
             let date = language === LANGUAGES.VI ?
                 this.capitalizeFirstLetter(moment.unix(+dataTime.date / 1000).format('dddd - DD/MM/YYYY'))
@@ -61,7 +60,7 @@ class ProfileDoctor extends Component {
             return (
                 <>
                     <div>{time} - {date}</div>
-                    <div>Miễn phí đặt lịch</div>
+                    <div><FormattedMessage id="patient.extra-infor-doctor.pricebooking" /></div>
                 </>
             )
         }
@@ -110,7 +109,7 @@ class ProfileDoctor extends Component {
                     </div>
                 </div>
                 <div className='price'>
-                    Giá Khám:
+                    <FormattedMessage id="patient.extra-infor-doctor.price2" />
                     {dataProfile && dataProfile.Doctor_infor &&
                         language === LANGUAGES.VI &&
                         <NumberFormat
