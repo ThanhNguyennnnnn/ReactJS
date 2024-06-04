@@ -230,7 +230,7 @@ class UserRedux extends Component {
         let positions = this.state.positionArr;
         let language = this.props.language;
         let isGetGenders = this.props.isLoadingGender;
-        console.log('check state redux: ', this.state)
+        // console.log('check state redux: ', this.state)
 
         // cach lay tho dan
         // let email = this.state.email;
