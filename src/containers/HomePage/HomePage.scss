@@ -8,7 +8,7 @@
         background: #f5f5f5;
     }
 
-    &.section-about{
+    &.section-about {
         height: 500px;
         border-top: 1px solid #f5f5f5;
     }
@@ -28,7 +28,7 @@
                 }
 
                 &.section-medical-facility {
-                    background-image: url('../../assets/MedicalFacility/thucuc.jpg');
+                    // background-image: url('../../assets/MedicalFacility/thucuc.jpg');
                 }
 
                 &.section-outstanding-doctor {
@@ -41,11 +41,18 @@
                 &.section-handbook {
                     background-image: url('../../assets/HandBook/camnang.jpg');
                 }
+
             }
+
+
+
+
         }
 
     }
 }
+
+
 
 .section-outstanding-doctor {
     .outer-bg {
@@ -66,28 +73,33 @@
     }
 }
 
-.home-footer{
+.home-footer {
     text-align: center;
     padding: 8px;
 }
-.section-about{
+
+.section-about {
     padding: 0 100px;
-    .section-about-header{
+
+    .section-about-header {
         padding: 20px 10px;
         font-size: 20px;
         font-weight: bold;
     }
-    .section-about-content{
+
+    .section-about-content {
         display: flex;
         gap: 15px;
         width: 100%;
-        .content-left{
+
+        .content-left {
             width: 60%;
         }
-        .content-right{
+
+        .content-right {
             width: 40%;
-            
-            p{
+
+            p {
                 text-align: justify;
                 font-style: italic;
                 padding-top: 15px;
@@ -176,6 +188,6 @@
     }
 }
 
-.slick-disabled{
+.slick-disabled {
     display: none !important;
 }

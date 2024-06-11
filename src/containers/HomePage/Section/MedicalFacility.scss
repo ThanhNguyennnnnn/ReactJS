@@ -1,0 +1,23 @@
+.section-medical-facility {
+    .section-customize {
+        padding: 5px;
+        cursor: pointer;
+        &:hover{
+            color: rgb(40, 89, 237);
+        }
+
+        .custom-border-Facility {
+            border: 1px solid rgb(112, 223, 56);
+            // padding: 20px;
+        }
+
+        .name-Facility {
+            width: 322px;
+            text-align: center;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding-top: 10px;
+        }
+    }
+}
